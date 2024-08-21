@@ -1,0 +1,106 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <title>Assignment_3</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            plugins: [],
+            colors: {
+              bgBtn: "background: rgb(171, 239, 95);",
+            },
+            fontFamily: {},
+            backgroundImage: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- nav section -->
+      <nav class="navbar w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-xl">
+              <span
+                ><i
+                  class="fa-solid fa-arrow-right text-black bg-[#ABEF5F] h-5 w-5 rounded-full -rotate-45"></i
+              ></span>
+              Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-semibold">
+              <li><a class="text-[#494949]">Home </a></li>
+              <li><a class="text-[#737373]">Service</a></li>
+              <li><a class="text-[#737373]">Portfolio</a></li>
+              <li><a class="text-[#737373]">Blogs</a></li>
+              <li><a class="text-[#737373]">Contact US</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <!-- icon -->
+            <div class="flex gap-5 text-lg hidden lg:flex">
+              <button class="flex items-center gap-4 font-semibold">
+                <span
+                  ><i
+                    class="fa-solid fa-magnifying-glass bg-[#FFFFFF] rounded-full w-8 h-8 item-center p-2"></i
+                ></span>
+                <i
+                  class="fa-solid fa-cart-shopping bg-[#FFFFFF] rounded-full w-8 h-8 item-center py-2"></i>
+              </button>
+            </div>
+            <div class="gap-3 mx-4">
+              <a
+                class="btn rounded-full text-[#1C1C1C] bg-[#ABEF5F] hidden lg:flex"
+                >Book Consult
+                <span
+                  ><i
+                    class="fa-solid text-white fa-arrow-right bg-black h-5 w-5 rounded-full py-1 -rotate-45"></i
+                ></span>
+              </a>
+            </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-lg font-medium gap-5">
+                <li><a>Home </a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact US</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end of nav section -->
+    </header>
+    <!-- end if header section -->
+  </body>
+</html>
